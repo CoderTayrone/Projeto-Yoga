@@ -136,7 +136,10 @@ li{
 /* Section Atividades */
 .container_atividades{
     max-width: 90%;
-    margin: auto;
+    margin: 0 auto;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
 }
 .cards_atividades{
     display: flex;
@@ -165,23 +168,93 @@ li{
     margin: 12px 0;
 }
 .containers_learn{
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
+    position: relative;
+}   
+.img_learn, .content_learn{
+    flex: 1;
 }
 .container_learn{
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
-    min-height: 80%;
     flex-wrap: wrap;
+    margin: 100px 0;
 }
 .content_learn, .img_learn{
-    max-width: 50%;
+    width: 50%;
     margin: auto;
-    border: 1px solid black;
+}
+.containers_learn{
+    position: relative;
+}
+.content_learn{
+    max-width: 90%;
+    margin: auto;
+}
+.content_learn h1{
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 10% 48px 24px 48px;
 }
 
+.content_learn p{
+    font-size: 1.8em;
+    line-height: 32px;
+    color: gray;
+    margin: 24px 48px 24px 48px;
+}
+.img_learn{
+    text-align: center;
+    position: relative;
+}
+._img_learn{
+    z-index: auto;
+    width: 90%;
+}
+.object{
+    position: absolute;
+}
+.Shape-2{
+    left: 0%;
+    top: -100px;
+}
+.Floral-5{
+    left: 1%;
+    top: -100px;
+}
+.Floral-6{
+    left: 1%;
+    bottom: -90px;
+}
+.Floral-9{
+    bottom: -40px;
+    left: 20px;
+}
+.brush-1{
+    bottom: -150px;
+    left: 0%;
+}
+.brush-2, .Floral-7{
+    left: 0%;
+    top: -40px;
+    z-index: -1;
+}
+.Shape-3{
+    bottom: -40px;
+    right: 20px;
+}
+.brush-3{
+    bottom: -40px;
+    right: 0px;
+    transform: rotate(155deg);
+}
+.Shape-4, .Floral-8{
+    right: 10px;
+    top: -40px;
+    z-index: -1;
+}
 
 /* Medias */
 @media (max-width: 1440px){
@@ -216,6 +289,21 @@ li{
     }
     .card_atividade p{
         margin-bottom: 48px;
+    }
+    .container_learn{
+        flex-direction: column;
+    }
+    .content_learn, .img_learn{
+        width: 80%;
+        margin: 48px auto;
+    }
+    .Shape-3{
+        bottom: -40px;
+        right: 10px;
+    }
+    .brush-3{
+        bottom: -40px;
+        right: -40px;
     }
 }
 
