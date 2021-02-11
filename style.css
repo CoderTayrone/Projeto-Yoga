@@ -297,9 +297,9 @@ li{
 
 /* Medias */
 @media (max-width: 1440px){
-    body{
+  /*  body{
         background-color: rgba(0, 0, 0, 0.9);
-    }
+    }*/
     /* Container Banner Principal*/
     .content_banner, .img_banner{
         max-width: 70%;
@@ -347,14 +347,16 @@ li{
     .img_join_us{
         margin: 48px;
     }
-
+    .content_join_us{
+        width: 100%;
+    }
 }
 
 @media (max-width: 1024px){
 
-    body{
+   /* body{
         background-color: rgba(0, 0, 0, 0.6);
-    }
+    }*/
     /* Container Principal*/
     .content_banner h1{
         font-size: 3.8em;
@@ -401,9 +403,9 @@ li{
    
 }
 @media (max-width: 800px){
-    body{
+   /* body{
         background-color: red;
-    }
+    }*/
     .container_02 h1{
         font-size: 3em;
     }
@@ -416,9 +418,9 @@ li{
 }
 
 @media (max-width: 600px){
-    body{
+  /*  body{
         background-color: blue;
-    }
+    }*/
     .container_02 h1{
         font-size: 2.4em;
     }
