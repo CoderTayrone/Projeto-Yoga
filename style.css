@@ -144,16 +144,15 @@ li{
 }
 .cards_atividades{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
     margin: 100px auto;
 }
 
 .card_atividade{
-    margin: 0 100px;
     text-align: center;
-    flex: 1 1 200px;
+    flex: 1 1 350px;
 }
 .card_atividade img{
     margin: 12px;
