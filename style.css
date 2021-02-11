@@ -66,14 +66,15 @@ li{
 }
 .content_banner{
     margin: 12px;
+    animation: right-to-left 1s;
 }
-.content_banner h1{
+.content_banner h1, .content_join_us h1{
     font-size: 5em;
     color: rgba(0, 0, 0, 0.8);
     width: 80%;
     margin-bottom: 24px;
 }
-.content_banner p{
+.content_banner p , .content_join_us p{
     font-size: 2em;
     line-height: 32px;
     color: gray;
@@ -256,6 +257,44 @@ li{
     z-index: -1;
 }
 
+
+/* Container Join Us*/
+
+.container_join_us{
+    display: flex;
+    max-width: 90%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+    background-color: #efefef;
+}
+.img_join_us, .content_join_us{
+    width: 50%;
+    flex: 1 1 600px;
+}
+.content_join_us{
+    padding: 48px;
+    flex-wrap: wrap;
+}
+
+.content_join_us h1{
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin-bottom: 24px;
+}
+.content_join_us p{
+    font-size: 2em;
+    line-height: 32px;
+    color: gray;
+    width: 100%;
+    margin: 24px 0px;
+}
+
+
+
+
+
 /* Medias */
 @media (max-width: 1440px){
     body{
@@ -305,6 +344,10 @@ li{
         bottom: -40px;
         right: -40px;
     }
+    .img_join_us{
+        margin: 48px;
+    }
+
 }
 
 @media (max-width: 1024px){
@@ -347,7 +390,12 @@ li{
     }
 
     /* Container Atividades */
+        
+    /* Container Join us*/
 
+    .content_join_us h1{
+        font-size: 4em;
+    }
     
 
    
@@ -362,6 +410,9 @@ li{
     .container_02 p{
         font-size: 1.4em;
     }
+    .content_join_us h1{
+        font-size: 3.5em;
+    }
 }
 
 @media (max-width: 600px){
@@ -373,5 +424,21 @@ li{
     }
     .container_02 p{
         font-size: 1.3em;
+    }
+    .content_join_us h1{
+        font-size: 3em;
+    }
+}
+
+
+
+@keyframes right-to-left {
+    0% {
+        transform: translateX(50%);
+        opacity: 0.5;
+    }    
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
     }
 }

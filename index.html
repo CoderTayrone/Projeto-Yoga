@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
@@ -32,7 +33,7 @@
             <div class="img_banner">
                 <img src="img/banner.png" alt="Banner Principal">
             </div>
-            <div class="content_banner">
+            <div class="content_banner" data-aos="fade-left">
                 <h1>Balance your body and mind</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -51,10 +52,10 @@
     </section>
     
     <section class="container_02">
-        <img src="img/background_section02.png" alt="" class="img-02">
+        <img src="img/background_section02.png" alt="" class="img-02" data-aos="fade-left">
             
-        <div class="content_02">
-            <h1>Balance your body and mind</h1>
+        <div class="content_02" data-aos="fade-right">
+            <h1>Pregnant Women Program</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -66,17 +67,17 @@
     
     <section class="container_atividades">
         <div class="cards_atividades">
-            <div class="card_atividade">
+            <div class="card_atividade" data-aos="fade-right">
                 <img src="img/Icon.png" alt="">
                 <h2>Lorem Ipsum</h2>
                 <p>lorem Ipsym tecnilgiconly often</p>
             </div>
-            <div class="card_atividade">
+            <div class="card_atividade" data-aos="fade-up">
                 <img src="img/Icon-1.png" alt="">
                 <h2>Lorem Ipsum</h2>
                 <p>lorem Ipsym tecnilgiconly often</p>
             </div>
-            <div class="card_atividade">
+            <div class="card_atividade" data-aos="fade-left">
                 <img src="img/Icon-2.png" alt=""  class="s">
                 <h2>Lorem Ipsum</h2>
                 <p>lorem Ipsym tecnilgiconly often</p>
@@ -87,7 +88,7 @@
     <section class="containers_learn">
         <div class="container_learn">
 
-            <div class="content_learn">
+            <div class="content_learn" data-aos="fade-right">
                 <h1>Balance your body and mind</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -97,7 +98,7 @@
             </div>
 
             <div class="img_learn">
-                <img src="img/Photo-01.png" alt="Banner Yoga" class="_img_learn">
+                <img src="img/Photo-01.png" alt="Banner Yoga" class="_img_learn" data-aos="fade-left">
                 <img src="img/Brush-1.png" alt="" class="object brush-2">
                 <img src="img/Brush-1.png" alt="" class="object brush-3">
                 <img src="img/Floral-3.png" alt="" class="object Floral-8">
@@ -113,5 +114,57 @@
         <img src="img/Floral.png" alt="" class="object Floral-6">
         <img src="img/Brush.png" alt="" class="object brush-1">
     </section>
+
+    <section class="container_join_us">
+
+        <div class="img_join_us">
+            <img src="img/yoga.png" alt="">
+        </div>
+        <div class="content_join_us" data-aos="fade-left">
+            <h1>Balance your body and mind</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+        </div>
+
+    </section>
+
+    <section class="container_atividades">
+        <div class="cards_atividades">
+            <div class="card_atividade" data-aos="fade-right">
+                <img src="img/g1.png" alt="">
+                <h2>Lorem Ipsum</h2>
+                <p>lorem Ipsym tecnilgiconly often</p>
+            </div>
+            <div class="card_atividade" data-aos="fade-up">
+                <img src="img/g2.png" alt="">
+                <h2>Lorem Ipsum</h2>
+                <p>lorem Ipsym tecnilgiconly often</p>
+            </div>
+            <div class="card_atividade" data-aos="fade-left">
+                <img src="img/g3.png" alt=""  class="s">
+                <h2>Lorem Ipsum</h2>
+                <p>lorem Ipsym tecnilgiconly often</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
 </body>
 </html>
