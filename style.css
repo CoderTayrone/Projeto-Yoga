@@ -136,37 +136,36 @@ li{
 
 /* Section Atividades */
 .container_atividades{
-    max-width: 90%;
-    margin: 0 auto;
-    min-height: 600px;
-    display: flex;
-    align-items: center;
+    border: 1px solid white;
 }
-.cards_atividades{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    margin: 100px auto;
-}
+    .cards_atividades{
+        max-width: 90%;
+        margin: 100px auto;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+    .card_atividade{
+        flex: 1 1 300px;
+        margin-top: 24px;
+        padding: 12px;
+    }
+    .card_atividade h2{
+        font-size: 2em;
+        color: rgba(0, 0, 0, 0.8);
+        margin-top: 5%;
+        margin-bottom: 12px;
+    }
+    .card_atividade p{
+        font-size: 1.3em;
+        line-height: 32px;
+        color: gray;
+        margin: 12px 0px;
+    }
+/* COntainer Learn */
 
-.card_atividade{
-    text-align: center;
-    flex: 1 1 350px;
-}
-.card_atividade img{
-    margin: 12px;
-}
-.card_atividade h2{
-    font-size: 32px;
-    color: rgba(0, 0, 0, 0.7);
-    margin: 12px 0;
-}
-.card_atividade p{
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.6);
-    margin: 12px 0;
-}
 .containers_learn{
     max-width: 90%;
     margin: auto;
@@ -296,7 +295,7 @@ li{
 
 /* Medias */
 @media (max-width: 1440px){
-  /*  body{
+    /*body{
         background-color: rgba(0, 0, 0, 0.9);
     }*/
     /* Container Banner Principal*/
@@ -353,15 +352,20 @@ li{
 
 @media (max-width: 1024px){
 
-   /* body{
+    /*body{
         background-color: rgba(0, 0, 0, 0.6);
     }*/
     /* Container Principal*/
     .content_banner h1{
-        font-size: 3.8em;
+        width: 100%;
+        font-size: 3.5em;
     }
     .container_banner p{
+        width: 100%;
         font-size: 1.3em;
+    }
+    .img_banner{
+        margin: 24px 0;
     }
     
     .object{
@@ -406,10 +410,25 @@ li{
         background-color: red;
     }*/
     .container_02 h1{
-        font-size: 3em;
+        font-size: 2.8em;
+        width: 70%;
     }
     .container_02 p{
+        width: 60%;
         font-size: 1.4em;
+    }
+    .container_learn{
+        width: 100%;
+    }
+    .container_learn h1{
+        width: 100%;
+        font-size: 3em;
+        margin: 0px;
+    }
+    .container_learn p{
+        width: 100%;
+        font-size: 1.6em;
+        margin: 24px 0px;
     }
     .content_join_us h1{
         font-size: 3.5em;
@@ -417,17 +436,28 @@ li{
 }
 
 @media (max-width: 600px){
-  /*  body{
+    /*body{
         background-color: blue;
     }*/
     .container_02 h1{
-        font-size: 2.4em;
+        width: 80%;
+        font-size: 2.6em;
     }
     .container_02 p{
-        font-size: 1.3em;
+        color: rgba(0, 0, 0, 0.6);
+        width: 80%;
+        font-size: 1.5em;
+    }
+    .img_join_us{
+        width: 100%;
     }
     .content_join_us h1{
         font-size: 3em;
+        width: 100%;
+    }
+    .content_join_us p{
+        width: 100%;     
+        font-size: 1.6em;   
     }
 }
 
