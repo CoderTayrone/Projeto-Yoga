@@ -385,7 +385,7 @@ li{
     }
     .container_02 h1{
         font-size: 3.5em;
-        width: 60%;
+        width: 70%;
         margin-bottom: 10px;
     }
     .container_02 p{
@@ -440,12 +440,12 @@ li{
         background-color: blue;
     }*/
     .container_02 h1{
-        width: 80%;
+        width: 100%;
         font-size: 2.6em;
     }
     .container_02 p{
         color: rgba(0, 0, 0, 0.6);
-        width: 80%;
+        width: 100%;
         font-size: 1.5em;
     }
     .img_join_us{
@@ -453,11 +453,12 @@ li{
     }
     .content_join_us h1{
         font-size: 3em;
-        width: 100%;
+        width: 90%;
     }
     .content_join_us p{
-        width: 100%;     
-        font-size: 1.6em;   
+        width: 90%;     
+        font-size: 1.6em;  
+        padding: 10px; 
     }
 }
 
